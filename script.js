@@ -40,4 +40,4 @@ function getMathResult(num, times) {
     return str;
 }
 
-getMathResult(10, 5);
+console.log(getMathResult(10, 5))
