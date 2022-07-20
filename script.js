@@ -31,3 +31,12 @@ personalMovieDB.movies[a] = b;
 personalMovieDB.movies[c] = d;
 
 console.log(personalMovieDB);
+
+
+for (let i = 1; i <= 8; i++) {
+  if (i === 7) {
+    // continue;
+    break
+  }
+  console.log(i);
+}
