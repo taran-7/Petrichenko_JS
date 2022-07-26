@@ -1,3 +1,5 @@
+// СЛАВА ІСУСУ ХРИСТУ!
+
 /* Задание на урок:
 
 1) Создать переменную numberOfFilms и в неё поместить ответ от пользователя на вопрос:
@@ -23,7 +25,7 @@
 
 "use strict";
 
-let numberOfFilms = +promt("Сколько фильмов вы уже посмотрели?", "");
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
 
 const personalMovieDB = {
   count: numberOfFilms,
@@ -33,10 +35,14 @@ const personalMovieDB = {
   privat: false,
 };
 
-let a = prompt("Один из последних просмотренных фильмов?", ""),
+const a = prompt("Один из последних просмотренных фильмов?", ""),
   b = prompt("На сколько оцените его?", ""),
   c = prompt("Один из последних просмотренных фильмов?", ""),
   d = prompt("На сколько оцените его?", "");
 
 personalMovieDB.movies[a] = b;
 personalMovieDB.movies[c] = d;
+// personalMovieDB.movies.a = b;    // через крапку не працює. Додає змінні а та с у об'єкт
+// personalMovieDB.movies.c = d;
+
+console.log(personalMovieDB);
