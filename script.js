@@ -1,11 +1,11 @@
 // СЛАВА ІСУСУ ХРИСТУ!
 "use strict";
 
-if (7 == 8) {
-  console.log("Ok!");
-} else {
-  console.log("Error");
-}
+// if (7 == 8) {
+//   console.log("Ok!");
+// } else {
+//   console.log("Error");
+// }
 
 // const num = 50;
 
@@ -17,20 +17,21 @@ if (7 == 8) {
 //   console.log("Как раз то, что нужно");
 // }
 
-// (num === 50) ? console.log("Ok") : console.log("error");
-
 const num = 50;
 
+(num === 50) ? console.log("Ok") : console.log("error");
+
 switch (num) {
-  case: 49
-  console.log("вгадав");
-  break;
-  case: 51
-  console.log("вгаfdgdfдав");
-  break;
-  case: 99
-  console.log("вгадdfgfdgfdав");
-  break;
-  case: 88
-  console.log("вгадghjhgjав");
+  case 49:
+    console.log("вгадhjyuyhrtав");
+    break;
+  case 57:
+    console.log("вгадав");
+    break;
+  case 749:
+    console.log("вгytgrrtgtrадав");
+    break;
+  default:
+    console.log("не вrадав");
+
 }
