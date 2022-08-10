@@ -1,33 +1,105 @@
-/* Задание на урок:
-
-1) Первую часть задания повторить по уроку
-
-2) Создать функцию showMyDB, которая будет проверять свойство privat. Если стоит в позиции
-false - выводит в консоль главный объект программы
-
-3) Создать функцию writeYourGenres в которой пользователь будет 3 раза отвечать на вопрос 
-"Ваш любимый жанр под номером ${номер по порядку}". Каждый ответ записывается в массив данных
-genres
-
-P.S. Функции вызывать не обязательно*/
+// СЛАВА ІСУСУ ХРИСТУ!
+/*jshint esversion: 6 */
 "use strict";
 
-const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
 
-const personalMovieDB = {
-  count: numberOfFilms,
-  movies: {},
-  actors: {},
-  genres: [],
-  privat: false,
-};
 
-const a = prompt("Один из последних просмотренных фильмов?", ""),
-  b = prompt("На сколько оцените его?", ""),
-  c = prompt("Один из последних просмотренных фильмов?", ""),
-  d = prompt("На сколько оцените его?", "");
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+// const hamburger = true;
+// const fries = true;
 
-console.log(personalMovieDB);
+// if (hamburger && fries) {
+//     console.log('Я наївся! Слава Богу!')
+// }
+
+// console.log((hamburger && fries))
+
+
+// const hamburger = 3;
+// const fries = 1;
+// const cola = 0;
+
+// console.log(1 && 0)
+// console.log(1 && 5)
+// console.log(null && 5)
+// console.log('Я наївся! Слава Богу!')
+// console.log(0 && 'Я наївся! Слава Богу!')
+
+
+// if (hamburger === 3 && cola === 1 && fries) {
+//   console.log('Я наївся! Слава Богу!')
+// } else {
+//   console.log('Йдемо в інший заклад!')
+// }
+
+
+// const hamburger = 3;
+// const fries = 0;
+// const cola = 0;
+
+// if (hamburger || cola || fries) {
+//   console.log('Ми задоволені! Слава Богу!')
+// } else {
+//   console.log('Йдемо в інший заклад!')
+// }
+
+// let jhonReport, alexReport, mariaReport = 'My report';
+
+// if (jhonReport || alexReport || mariaReport) {
+//   console.log('Один звіт всеж таки є! Слава Богу!')
+// }
+
+// let jhonReport1, alexReport1, mariaReport1 = null;
+
+// if (jhonReport1 || alexReport1 || mariaReport1) {
+//   console.log('Один звіт всеж таки є! Слава Богу!')
+// }
+// console.log((jhonReport1 || alexReport1 || mariaReport1))
+
+
+const hamburger = 3;
+const fries = 3;
+const cola = 0;
+const nuggets = 2;
+
+if (hamburger === 3 && cola === 2 || fries === 3 && fries) {
+  console.log('Ми задоволені! Слава Богу!')
+} else {
+  console.log('Йдемо в інший заклад!')
+}
+console.log(hamburger === 3 && cola === 2 || fries === 3 && nuggets)
+
+
+
+
+console.log(NaN || 2 || undefined);
+
+console.log(NaN && 2 && undefined);
+
+console.log(1 && 2 && 3);
+
+console.log(!1 && 2 || !3);
+
+console.log(25 || null && !3);
+
+console.log(NaN || null || !3 || undefined || 5);
+
+console.log(NaN || null && !3 && undefined || 5);
+
+console.log(5 === 5 && 3 > 1 || 5);
+
+console.log( NaN || 2 || undefined );
+
+console.log( NaN && 2 && undefined );
+
+console.log( 1 && 2 && 3 );
+
+console.log( !1 && 2 || !3 );
+
+console.log( 25 || null && !3 );
+
+console.log( NaN || null || !3 || undefined || 5);
+
+console.log( NaN || null && !3 && undefined || 5);
+
+console.log( 5 === 5 && 3 > 1 || 5);
