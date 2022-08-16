@@ -8,11 +8,30 @@ const people = [
     { name: 'Petro', age: 22, hith: 189 },
 ]
 
-for (let i = 0; i < people.length; ++i) {
-    console.log(people[i])
-}
+// // for
 
-for (let person of people) {
-    console.log(person)
-}
+// for (let i = 0; i < people.length; ++i) {
+//     console.log(people[i])
+// }
 
+// // for of
+
+// for (let person of people) {
+//     console.log(person)
+// }
+
+// forEach
+
+// people.forEach(function (person, index, people) {
+//     console.log(person)
+//     console.log(index)
+//     console.log(people)
+// })
+
+// people.forEach(person => console.log(person))
+
+
+// Map 
+const newPeople = people.map(person => {
+    return person
+})
