@@ -35,3 +35,34 @@ const people = [
 const newPeople = people.map(person => {
     return person
 })
+
+
+// 20 методов массивов в JavaScript, которые вы должны знать.
+// https://www.youtube.com/watch?v=ZcLGyy0YFwk
+
+// const arr = [23,43,55,67,77,78,99]
+// // 1. forEach перебор массива
+//
+// arr.forEach((item, index, arr) => {
+//     console.log(item, index, arr)
+// })
+
+// 2. Перебор и возврат нового массива на основе текущего массива.
+
+// const arr = [23,43,55,67,77,78,99]
+//
+// const newArr = arr.map((item,index,arr)=>{
+// return `${index} ${item}${item}`
+// })
+// console.log(newArr)
+
+// 3. reduce   Перебор элементов массива и возврат новой структуры данных
+
+const arr = [23,43,55,67,77,78,99]
+
+const newReduce = arr.reduce((acc, item,index, arr)=>{
+acc[item] = index
+    return acc;
+},{})
+console.log(newReduce)
+
