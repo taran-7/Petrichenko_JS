@@ -57,9 +57,7 @@ const newPeople = people.map(person => {
 // console.log(newArr)
 
 // 3. reduce   Перебор элементов массива и возврат новой структуры данных
-
 const arr = [23,43,55,67,77,78,99]
-
 const newReduce = arr.reduce((acc, item,index, arr)=>{
 acc[item] = index
     return acc;
