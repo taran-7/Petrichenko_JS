@@ -12,21 +12,30 @@
 // }
 
 
-// Завдання з додаванням ялинки зірочками.
+// // Завдання з додаванням ялинки зірочками.
+//
+// let result = ''
+// const length = 7
+//
+// for (let i = 1; i<length; i++) {
+//
+//     for (let j = 0; j < i; j++) {
+//         result += '*'
+//     }
+//     result += '\n';
+// }
+// console.log(result)
 
-let result = ''
-const length = 7
-
-for (let i = 1; i<length; i++) {
-
-    for (let j = 0; j < i; j++) {
-        result += '*'
+for (let i = 0; i < 2; i++) {
+    console.log(`First level ${i}`);
+    for (let j = 0; j < 2; j++) {
+        console.log(`Second level ${j}`);
+        for (let t = 0; t < 2; t++) {
+            if (t === 2) continue;
+            console.log(`Third level ${t}`);
+        }
     }
-    result += '\n';
 }
-console.log(result)
-
-
 
 
 

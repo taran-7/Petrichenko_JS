@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27df2785-d67d-4c4b-80bb-bc892c6db7bb" name="Changes" comment="">
+    <list default="true" id="27df2785-d67d-4c4b-80bb-bc892c6db7bb" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
@@ -74,8 +74,30 @@
       <workItem from="1660937198207" duration="2597000" />
       <workItem from="1660989193203" duration="3664000" />
       <workItem from="1661090693463" duration="10976000" />
-      <workItem from="1661201794019" duration="587000" />
+      <workItem from="1661201794019" duration="1342000" />
     </task>
+    <task id="LOCAL-00001" summary="asterix">
+      <created>1661202418229</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661202418229</updated>
+    </task>
+    <task id="LOCAL-00002" summary="asterix">
+      <created>1661202571164</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661202571164</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update">
+      <created>1661202670252</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661202670252</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,5 +113,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="asterix" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>
