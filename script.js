@@ -26,6 +26,7 @@
 // }
 // console.log(result)
 
+// Цикл у циклі. Мітки.
 for (let i = 0; i < 2; i++) {
     console.log(`First level ${i}`);
     for (let j = 0; j < 2; j++) {
@@ -36,6 +37,8 @@ for (let i = 0; i < 2; i++) {
         }
     }
 }
+
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/label
 
 
 
