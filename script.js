@@ -1,6 +1,6 @@
 // СЛАВА ІСУСУ ХРИСТУ!
 /*jshint esversion: 6 */
-// "use strict";
+"use strict";
 
 // Циклы та мітки. Урок 23 Івана Петриченко
 
@@ -28,117 +28,109 @@
 
 // // Цикл у циклі. Мітки.
 // for (let i = 0; i < 2; i++) {
-//     console.log(`First level ${i}`);
-//     for (let j = 0; j < 2; j++) {
-//         console.log(`Second level ${j}`);
-//         for (let t = 0; t < 2; t++) {
-//             if (t === 2) continue;
-//             console.log(`Third level ${t}`);
-//         }
+//   console.log(`First level ${i}`);
+//   for (let j = 0; j < 2; j++) {
+//     console.log(`Second level ${j}`);
+//     for (let t = 0; t < 2; t++) {
+//       if (t === 2) continue;
+//       console.log(`Third level ${t}`);
 //     }
+//   }
 // }
 
-// // https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/label
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/label
 
 
-// // Место для первой задачи
-// function firstTask() {
-//     // Пишем решение вот тут
-//     for (let i = 5; i < 11; i++) {
-//         console.log(i);
-//     }
 
+// foo: {
+//   console.log('привет');
+//   break foo;
+//   console.log('эта строка не будет исполнена');
 // }
+// console.log('спацювало');
+//
+// // Вывод:
+// //   "привет"
+// //   "спацювало"
 
-// firstTask();
+let i, j;
 
-
-// Место для второй задачи
-
-// При помощи цикла for вывести числа от 20 до 10 в консоль. 
-// В обратном порядке (20, 19, 18...). Когда цикл дойдет до числа 13 - остановить весь цикл
-// function secondTask() {
-//     // Пишем решение вот тут
-//     for (let i = 20; i >= 10; i--) {
-//         if (i === 13) {
-//             break;
-//         }
-//         console.log(i);
-//     }
-// }
-// secondTask();
-
-// При помощи цикла for выведите чётные числа от 2 до 10 включительно
-
-// Место для третьей задачи
-function thirdTask() {
-    // Пишем решение вот тут
-    for (let i = 2; i <= 10; i++) {
-        if (i % 2 === 0) {
-            console.log(i);
-        }
+loop1:
+for (i = 0; i < 3; i++) {      //Первый цикл, обозначенный меткой "loop1"
+  loop2:
+  for (j = 0; j < 3; j++) {   //Второй цикл, обозначенный меткой "loop2"
+    if (i === 1 && j === 1) {
+      break loop1;
     }
-}
-thirdTask();
-
-// // Место для четвертой задачи
-
-for (let i = 2; i <= 16; i++) {
-    if (i % 2 === 0) {
-        continue;
-    } else {
-        console.log(i);
-    }
+    console.log('i = ' + i + ', j = ' + j);
+  }
 }
 
+// Вывод:
+//   "i = 0, j = 0"
+//   "i = 0, j = 1"
+//   "i = 0, j = 2"
+//   "i = 1, j = 0"
 
-let i = 2;
+// forEach 
 
-while (i <= 16) {
+let data = [
+  {
+    'name': 'Olex',
+    'age': 34,
+    'email': 'top@i.ua'
+  },
+  {
+    'name': 'Olex',
+    'age': 37,
+    'email': 'topjsdfjkdsf@i.ua'
+  },
+  {
+    'name': 'Oikdfd',
+    'age': 34,
+    'email': 'tsdfdsfop@i.ua'
+  },
+  {
+    'name': 'Terui',
+    'age': 38,
+    'email': '8324ewrtop@i.ua'
+  },
+]
 
-    if (i % 2 === 0) {
-        i++;
-        continue;
-    } else {
-        console.log(i);
-    }
-    i++;
-}
-
-// // Цикл, который нужно переписать:
-
-for (let i = 2; i <= 16; i++) {
-    if (i % 2 === 0) {
-        continue;
-    } else {
-        console.log(i);
-    }
-}
-
-
-// function fourthTask() {
-//     // Пишем решение вот тут
-
-
-// }
-
-// Место для пятой задачи
-
-function fifthTask() {
-    const arrayOfNumbers = [];
-
-    // Пишем решение вот тут
-    for (let i = 5; i < 11; i++) {
-
-        arrayOfNumbers[i - 5] = i;
-
-    }
-    console.log(arrayOfNumbers);
-
-    // Не трогаем
-    return arrayOfNumbers;
-}
-
-fifthTask();
+const emailGet = []
+const userGet = []
 
 
+data.forEach((el) => {
+  emailGet.push(el.email)
+  userGet.push(el.name)
+
+})
+console.log(emailGet)
+console.log(userGet)
+
+
+
+
+const ar = [1, 2, 3, 4, 5, 6, 7]
+const newArr = []
+
+ar.forEach((item) => {
+  newArr.push((`${item}${item}`))
+})
+console.log(newArr)
+
+
+// map
+const ar1 = [1, 2, 3, 4, 5, 6, 7]
+let arr2 = ar1.map((item, index, ar1) => {
+  return item = `${item}${item}`
+})
+console.log(arr2)
+
+
+const ar3 = [1, 2, 3, 4, 5, 6, 7]
+
+
+
+console.log()
