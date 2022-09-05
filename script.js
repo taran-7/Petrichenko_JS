@@ -2,143 +2,51 @@
 /*jshint esversion: 6 */
 // "use strict";
 
-// Циклы та мітки. Урок 23 Івана Петриченко
+// Циклы та мітки. Урок 24 Івана Петриченко
 
-// for (let i = 0; i <3; i++){
-//     console.log(i, 'i')
-//     for(let j=0; j<4;j++){
-//         console.log(j, 'j')
-//             }
-// }
+// 1) Автоматизировать вопросы пользователю про фильмы при помощи цикла
+// 2) Сделать так, чтобы пользователь не мог оставить ответ в виде пустой строки,
+//     отменить ответ или ввести название фильма длинее, чем 50 символов. Если это происходит -
+// возвращаем пользователя к вопросам опять. (К любой строке можно обратиться как
+// str.length - и получить её длину)
+// 3) При помощи условий проверить  personalMovieDB.count, и если он меньше 10 - вывести сообщение
+// "Просмотрено довольно мало фильмов", если от 10 до 30 - "Вы классический зритель", а если больше -
+// "Вы киноман". А если не подошло ни к одному варианту - "Произошла ошибка"
+// 4) Потренироваться и переписать цикл еще двумя способами
 
+'use strict';
 
-// // Завдання з додаванням ялинки зірочками.
-//
-// let result = ''
-// const length = 7
-//
-// for (let i = 1; i<length; i++) {
-//
-//     for (let j = 0; j < i; j++) {
-//         result += '*'
-//     }
-//     result += '\n';
-// }
-// console.log(result)
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-// // Цикл у циклі. Мітки.
-// for (let i = 0; i < 2; i++) {
-//     console.log(`First level ${i}`);
-//     for (let j = 0; j < 2; j++) {
-//         console.log(`Second level ${j}`);
-//         for (let t = 0; t < 2; t++) {
-//             if (t === 2) continue;
-//             console.log(`Third level ${t}`);
-//         }
-//     }
-// }
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-// // https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/label
+for (let i = 0; i < 2; i++) {
+    const a = prompt('Один из последних просмотренных фильмов?', ''),
+        b = prompt('На сколько оцените его?', '');
 
-
-// // Место для первой задачи
-// function firstTask() {
-//     // Пишем решение вот тут
-//     for (let i = 5; i < 11; i++) {
-//         console.log(i);
-//     }
-
-// }
-
-// firstTask();
-
-
-// Место для второй задачи
-
-// При помощи цикла for вывести числа от 20 до 10 в консоль. 
-// В обратном порядке (20, 19, 18...). Когда цикл дойдет до числа 13 - остановить весь цикл
-// function secondTask() {
-//     // Пишем решение вот тут
-//     for (let i = 20; i >= 10; i--) {
-//         if (i === 13) {
-//             break;
-//         }
-//         console.log(i);
-//     }
-// }
-// secondTask();
-
-// При помощи цикла for выведите чётные числа от 2 до 10 включительно
-
-// Место для третьей задачи
-function thirdTask() {
-    // Пишем решение вот тут
-    for (let i = 2; i <= 10; i++) {
-        if (i % 2 === 0) {
-            console.log(i);
-        }
-    }
-}
-thirdTask();
-
-// // Место для четвертой задачи
-
-for (let i = 2; i <= 16; i++) {
-    if (i % 2 === 0) {
-        continue;
+    if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+        personalMovieDB.movies[a] = b;
+        console.log('done');
     } else {
-        console.log(i);
+        console.log('error');
+        i--;
     }
 }
 
-
-let i = 2;
-
-while (i <= 16) {
-
-    if (i % 2 === 0) {
-        i++;
-        continue;
-    } else {
-        console.log(i);
-    }
-    i++;
+if (personalMovieDB.count < 10) {
+    console.log("Просмотрено довольно мало фильмов");
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+    console.log("Вы классический зритель");
+} else if (personalMovieDB.count >= 30) {
+    console.log("Вы киноман");
+} else {
+    console.log("Произошла ошибка");
 }
 
-// // Цикл, который нужно переписать:
-
-for (let i = 2; i <= 16; i++) {
-    if (i % 2 === 0) {
-        continue;
-    } else {
-        console.log(i);
-    }
-}
-
-
-// function fourthTask() {
-//     // Пишем решение вот тут
-
-
-// }
-
-// Место для пятой задачи
-
-function fifthTask() {
-    const arrayOfNumbers = [];
-
-    // Пишем решение вот тут
-    for (let i = 5; i < 11; i++) {
-
-        arrayOfNumbers[i - 5] = i;
-
-    }
-    console.log(arrayOfNumbers);
-
-    // Не трогаем
-    return arrayOfNumbers;
-}
-
-fifthTask();
-
-
+console.log(personalMovieDB);

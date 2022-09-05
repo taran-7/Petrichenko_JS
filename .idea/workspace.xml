@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27df2785-d67d-4c4b-80bb-bc892c6db7bb" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
@@ -47,7 +46,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.standard": "",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.intentionPowerPack",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -78,6 +77,8 @@
       <workItem from="1661201794019" duration="1904000" />
       <workItem from="1661290369084" duration="14000" />
       <workItem from="1661290397255" duration="41000" />
+      <workItem from="1661364382944" duration="40000" />
+      <workItem from="1662405903673" duration="1819000" />
     </task>
     <task id="LOCAL-00001" summary="asterix">
       <created>1661202418229</created>
